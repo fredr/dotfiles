@@ -10,8 +10,8 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cookiecurl="curl -b cookies.txt -c cookies.txt $*"
-alias rgrep="echo grep -r $2 ."
 alias gg="git grep -n"
+rgrep() { grep -r -n "$1" . }
 
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/go_appengine:$HOME/go/bin"
 
