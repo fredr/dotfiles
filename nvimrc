@@ -45,6 +45,8 @@ set list
 " highlight current line number
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 set cursorline
+syntax sync minlines=256
+set re=1
 
 " highlight matching parent with color
 highlight MatchParen cterm=bold ctermbg=none ctermfg=gray
@@ -76,6 +78,19 @@ nnoremap N Nzzzv
 
 " Don't move on *
 nnoremap <silent> * :let stay_star_view = winsaveview()<cr>*:call winrestview(stay_star_view)<cr>
+
+" Resize splits when the window is resized
+au VimResized * :wincmd =
+
+"visual search mappings
+function! s:VSetSearch()
+    let temp = @@
+    norm! gvy
+    let @/ = '\V' . substitute(escape(@@, '\'), '\n', '\\n', 'g')
+    let @@ = temp
+endfunction
+vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
+vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
 
 " File type settings
 au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
