@@ -1,0 +1,19 @@
+
+[user]
+	name = Fredrik Enestad
+	email = fredrik.enestad@soundtrackyourbrand.com
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	status = auto
+[core]
+	autocrlf = input
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[push]
+	default = simple
