@@ -7,6 +7,8 @@ TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 plugins=(git npm go)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt share_history
+
 alias vim="nvim"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
