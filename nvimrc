@@ -7,6 +7,7 @@ call vundle#begin("~/.nvim/bundle")
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
@@ -69,6 +70,20 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+map <F1> :tabp<CR>
+map <F2> :w<CR>
+map <F3> :tabn<CR>
+map <F4> :%s/\s\+$//<CR>
+map <F10> :q<CR>
+
+set tags=./tags;/
+"Ctrl - k, jump to tag in new tab
+nmap <C-k> <C-w><C-]><C-w>T
+
+
+" Make ending space on files glow red
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " Center the screen
 nnoremap <space> zz
