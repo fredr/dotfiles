@@ -15,6 +15,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cookiecurl="curl -b cookies.txt -c cookies.txt $*"
 alias gg="git grep -n"
 rgrep() { grep -r -n "$1" . }
+alias gt="go test -v"
+gtr() { go test -v -run=$1 }
 
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/go_appengine:$HOME/go/bin"
 
