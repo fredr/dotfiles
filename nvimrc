@@ -76,11 +76,6 @@ map <F3> :tabn<CR>
 map <F4> :%s/\s\+$//<CR>
 map <F10> :q<CR>
 
-set tags=./tags;/
-"Ctrl - k, jump to tag in new tab
-nmap <C-k> <C-w><C-]><C-w>T
-
-
 " Make ending space on files glow red
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$\| \+\ze\t/
@@ -151,3 +146,9 @@ noremap <Leader>n :<C-u>call g:NerdTreeFindToggle()<cr>
 
 " For refreshing current file and showing current dir
 noremap <Leader>j :NERDTreeFind<cr>
+
+" Remap :W to :w
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
