@@ -8,6 +8,7 @@ Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
@@ -37,6 +38,9 @@ set smartcase                   " ... but not when search pattern contains upper
 set autoindent                  " Indent code automatically
 set smartindent
 set smarttab                    " Tab according to sourrounding code
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Highlight trailing white space
 highlight ExtraWhitespace ctermbg=darkred guibg=darkred
