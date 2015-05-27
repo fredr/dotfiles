@@ -156,3 +156,4 @@ noremap <Leader>j :NERDTreeFind<cr>
 :command Wq wq
 :command W w
 :command Q q
+:command Qall qall
