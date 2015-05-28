@@ -34,13 +34,6 @@ zstyle ':completion:*' special-dirs true
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-source "$HOME/google-cloud-sdk/path.zsh.inc"
-
-# The next line enables bash completion for gcloud.
-source "$HOME/google-cloud-sdk/completion.zsh.inc"
-
-
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/fredrik/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
