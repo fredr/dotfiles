@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.nvim/bundle/Vundle.vim
 call vundle#begin("~/.nvim/bundle")
 
+Plugin 'tpope/vim-fireplace'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
