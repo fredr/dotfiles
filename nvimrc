@@ -1,8 +1,8 @@
 scriptencoding utf-8
 set encoding=utf-8
 filetype off
-set rtp+=~/.nvim/bundle/Vundle.vim
-call vundle#begin("~/.nvim/bundle")
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin("~/.config/nvim/bundle")
 
 Plugin 'tpope/vim-fireplace'
 Plugin 'fatih/vim-go'
