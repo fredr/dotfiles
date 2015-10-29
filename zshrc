@@ -40,11 +40,11 @@ export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/fredrik/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
+# autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/fredrik/google-cloud-sdk/path.zsh.inc'
 
-# The next line enables bash completion for gcloud.
+# The next line enables shell command completion for gcloud.
 source '/Users/fredrik/google-cloud-sdk/completion.zsh.inc'
-
-# autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
