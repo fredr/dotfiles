@@ -36,11 +36,8 @@ zstyle ':completion:*' special-dirs true
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/fredrik/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 eval $(thefuck --alias)
+eval "$(docker-machine env default)"
 
 # autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
