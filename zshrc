@@ -49,3 +49,7 @@ source '/Users/fredrik/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/fredrik/google-cloud-sdk/completion.zsh.inc'
+
+[ -s "/Users/fredrik/.dnx/dnvm/dnvm.sh" ] && . "/Users/fredrik/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+source /usr/local/lib/dnx/bin/dnvm.sh
