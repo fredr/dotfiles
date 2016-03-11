@@ -21,6 +21,8 @@ rgrep() { grep -r -n "$1" . }
 alias gt="go test -v"
 alias ctags=/usr/local/bin/ctags
 gtr() { go test -v -run=$1 }
+alias kc=kubectl
+dup() { docker-machine start default && eval "$(docker-machine env default)" }
 
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/go_appengine:$HOME/go/bin"
 
