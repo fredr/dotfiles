@@ -25,7 +25,13 @@ alias kc=kubectl
 dup() { docker-machine start default && eval "$(docker-machine env default)" }
 dkill() { docker rm $(docker ps -a -q); docker rmi $(docker images -q) }
 
-export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/go_appengine:$HOME/go/bin"
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/fredrik/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/fredrik/google-cloud-sdk/completion.zsh.inc'
+
+export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/go_appengine:$HOME/go/bin:$PATH"
 
 export GOPATH="$HOME/go"
 launchctl setenv GOPATH `go env GOPATH`
@@ -44,12 +50,6 @@ eval "$(docker-machine env default)"
 
 # autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/fredrik/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/fredrik/google-cloud-sdk/completion.zsh.inc'
 
 [ -s "/Users/fredrik/.dnx/dnvm/dnvm.sh" ] && . "/Users/fredrik/.dnx/dnvm/dnvm.sh" # Load dnvm
 
