@@ -13,6 +13,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on
