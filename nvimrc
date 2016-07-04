@@ -128,6 +128,9 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
+
 au FileType go nmap gd <Plug>(go-def)
 au FileType go nmap <Leader>s <Plug>(go-def-split)
 au FileType go nmap <Leader>v <Plug>(go-def-vertical)
