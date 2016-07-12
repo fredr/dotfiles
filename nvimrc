@@ -64,10 +64,6 @@ set re=1
 " highlight matching parent with color
 highlight MatchParen cterm=bold ctermbg=none ctermfg=gray
 
-"http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
-set clipboard^=unnamed
-set clipboard^=unnamedplus
-
 let mapleader = ","
 let g:mapleader = ","
 
