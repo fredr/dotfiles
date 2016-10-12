@@ -34,7 +34,6 @@ jgtr() {
  fi
 }
 alias kc=kubectl
-dup() { docker-machine start default && eval "$(docker-machine env default)" }
 dkill() { docker rm $(docker ps -a -q); docker rmi $(docker images -q) }
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -58,7 +57,6 @@ zstyle ':completion:*' special-dirs true
 export PATH="/usr/local/heroku/bin:$PATH"
 
 eval $(thefuck --alias)
-eval "$(docker-machine env default)"
 
 # autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
