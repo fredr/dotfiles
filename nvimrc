@@ -7,22 +7,21 @@ call vundle#begin("~/.config/nvim/bundle")
 Plugin 'tpope/vim-fireplace'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'mileszs/ack.vim'
+Plugin 'dylanaraps/crayon'
 
 call vundle#end()
 filetype plugin indent on
 
 syntax enable
+set termguicolors
 set background=dark
-let g:solarized_termtrans = 1
-let g:solarized_visibility =  "low"
-colorscheme solarized
+colorscheme crayon
 
 set noerrorbells                " No beeps
 set number                      " Show line numbers

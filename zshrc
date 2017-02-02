@@ -1,7 +1,7 @@
 TERM=xterm-256color
 
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="agnoster"
+ZSH_THEME="dst"
 
 # Better time format: http://superuser.com/questions/71857/change-the-output-format-of-zshs-time
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
