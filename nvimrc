@@ -49,7 +49,10 @@ set expandtab
 
 
 " Fix cursor settings, aka disable guicursor
-:set guicursor=
+set guicursor=
+
+" Enable mouse
+set mouse=a
 
 " Highlight trailing white space
 highlight ExtraWhitespace ctermbg=darkred guibg=darkred
@@ -86,8 +89,8 @@ map <F4> :%s/\s\+$//<CR>
 map <F10> :q<CR>
 
 " Make ending space on files glow red
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$\| \+\ze\t/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " Center the screen
 nnoremap <space> zz
@@ -160,11 +163,11 @@ noremap <Leader>n :<C-u>call g:NerdTreeFindToggle()<cr>
 noremap <Leader>j :NERDTreeFind<cr>
 
 " Remap :W to :w
-:command WQ wq
-:command Wq wq
-:command W w
-:command Q q
-:command Qall qall
+command WQ wq
+command Wq wq
+command W w
+command Q q
+command Qall qall
 
 "Ctrl - k, jump to tag in new tab
 "nmap <C-k> <C-w><C-]><C-w>T
