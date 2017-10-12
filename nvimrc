@@ -47,6 +47,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+
+" Fix cursor settings, aka disable guicursor
+:set guicursor=
+
 " Highlight trailing white space
 highlight ExtraWhitespace ctermbg=darkred guibg=darkred
 " Highlight UTF-8 chars that are out of range
