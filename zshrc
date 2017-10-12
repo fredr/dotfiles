@@ -21,18 +21,6 @@ rgrep() { grep -r -n "$1" . }
 alias gt="go test -v"
 alias ctags=/usr/local/bin/ctags
 gtr() { go test -v -run=$1 }
-jgtr() {
- TEST_REGEX=$1
- shift # shift all arguments so that $2 => $1 etc.
- TEST_FLAGS="$@" # Let TEST_FLAGS be rest of args
-
- TEST_FILE=$(fgrep -slr "$TEST_REGEX(" {auth,radio,payment}-lib/test geocoding | head -1)
- if [[ -n $TEST_FILE ]]; then
-   go test -v "./$(dirname $TEST_FILE)/..." -test.run="$TEST_REGEX$" $TEST_FLAGS
- else
-   echo "Did not find: $TEST_REGEX"
- fi
-}
 alias kc=kubectl
 dkill() { docker rm $(docker ps -a -q); docker rmi $(docker images -q) }
 
@@ -64,3 +52,4 @@ eval $(thefuck --alias)
 [ -s "/Users/fredrik/.dnx/dnvm/dnvm.sh" ] && . "/Users/fredrik/.dnx/dnvm/dnvm.sh" # Load dnvm
 
 source /usr/local/lib/dnx/bin/dnvm.sh
+source $HOME/dotfiles/priv
