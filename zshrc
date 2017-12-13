@@ -30,7 +30,7 @@ source '/Users/fredrik/google-cloud-sdk/path.zsh.inc'
 # The next line enables shell command completion for gcloud.
 source '/Users/fredrik/google-cloud-sdk/completion.zsh.inc'
 
-export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/go_appengine:$HOME/go/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/go/bin:$PATH"
 
 export GOPATH="$HOME/go"
 launchctl setenv GOPATH `go env GOPATH`
