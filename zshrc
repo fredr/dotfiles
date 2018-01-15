@@ -24,7 +24,6 @@ gtr() { go test -v -run=$1 }
 alias kc=kubectl
 dkill() { docker rm $(docker ps -a -q); docker rmi $(docker images -q) }
 alias work="jrnl @work"
-alias worked-yesterday="jrnl -on yesterday @work"
 alias todo="jrnl @todo"
 
 # The next line updates PATH for the Google Cloud SDK.
