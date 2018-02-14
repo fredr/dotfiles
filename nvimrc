@@ -14,6 +14,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'mileszs/ack.vim'
 Plugin 'dylanaraps/crayon'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
@@ -122,6 +123,8 @@ au BufNewFile,BufRead *.vim setlocal noet ts=2 sw=2 sts=2
 au BufNewFile,BufRead *.txt setlocal noet ts=4 sw=4 
 au BufNewFile,BufRead *.md setlocal noet ts=4 sw=4 
 
+" =================== Vim-jsx ===================
+let g:jsx_ext_required = 0
 
 " ==================== Vim-go ====================
 let g:go_fmt_command = "goimports"
