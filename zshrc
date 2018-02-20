@@ -15,7 +15,7 @@ alias vim="nvim"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cookiecurl="curl -b cookies.txt -c cookies.txt $*"
-alias gg="git grep -n"
+alias gg="git grep -n --untracked -I"
 alias cmake-debug="cmake -DCMAKE_BUILD_TYPE=Debug"
 rgrep() { grep -r -n "$1" . }
 alias gt="go test -v"
