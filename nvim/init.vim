@@ -172,5 +172,8 @@ command W w
 command Q q
 command Qall qall
 
+" Remap :E to :e
+command E e
+
 "Ctrl - k, jump to tag in new tab
 "nmap <C-k> <C-w><C-]><C-w>T
