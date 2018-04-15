@@ -121,3 +121,7 @@ export GOPATH=`go env GOPATH`
 . $HOME/.asdf/completions/asdf.bash
 
 export EDITOR=vim
+
+if [ -f ~/.bash_extra ]; then
+    . ~/.bash_extra
+fi
