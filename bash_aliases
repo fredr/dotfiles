@@ -1,7 +1,7 @@
 #!/bin/bash
 
 alias ll="ls -l"
-alias la="ls -A"
+alias la="ls -al"
 alias l="ls -CF"
 
 alias kc="kubectl"
