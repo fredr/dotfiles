@@ -126,3 +126,6 @@ export EDITOR=vim
 if [ -f ~/.bash_extra ]; then
     . ~/.bash_extra
 fi
+
+#SYBCTL_GCLOUD_ALIAS#
+source ~/.sybctl_gcloud_alias
