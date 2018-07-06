@@ -1,0 +1,67 @@
+[submodule "crayon"]
+  url = git@github.com:dylanaraps/crayon.git
+  path = nvim/bundle/crayon
+[submodule "nerdtree"]
+  url = git@github.com:scrooloose/nerdtree.git
+  path = nvim/bundle/nerdtree
+[submodule "syntastic"]
+  url = git@github.com:scrooloose/syntastic.git
+  path = nvim/bundle/syntastic
+[submodule "vim-elixir"]
+  url = git@github.com:elixir-lang/vim-elixir.git
+  path = nvim/bundle/vim-elixir
+[submodule "vim-fireplace"]
+  url = git@github.com:tpope/vim-fireplace.git
+  path = nvim/bundle/vim-fireplace
+[submodule "vim-fugitive"]
+  url = git@github.com:tpope/vim-fugitive.git
+  path = nvim/bundle/vim-fugitive
+[submodule "vim-gitgutter"]
+  url = git@github.com:airblade/vim-gitgutter.git
+  path = nvim/bundle/vim-gitgutter
+[submodule "vim-go"]
+  url = git@github.com:fatih/vim-go.git
+  path = nvim/bundle/vim-go
+[submodule "vim-javascript"]
+  url = git@github.com:pangloss/vim-javascript.git
+  path = nvim/bundle/vim-javascript
+[submodule "vim-jsx"]
+  url = git@github.com:mxw/vim-jsx.git
+  path = nvim/bundle/vim-jsx
+[submodule "Vundle"]
+  url = git@github.com:VundleVim/Vundle.vim.git
+  path = nvim/bundle/Vundle.vim
+[submodule "ack"]
+  url = git@github.com:mileszs/ack.vim.git
+  path = nvim/bundle/ack.vim
+[submodule "crayon"]
+  url = git@github.com:dylanaraps/crayon.git
+  path = nvim/bundle/crayon
+[submodule "nerdtree"]
+  url = git@github.com:scrooloose/nerdtree.git
+  path = nvim/bundle/nerdtree
+[submodule "syntastic"]
+  url = git@github.com:scrooloose/syntastic.git
+  path = nvim/bundle/syntastic
+[submodule "vim-elixir"]
+  url = git@github.com:elixir-lang/vim-elixir.git
+  path = nvim/bundle/vim-elixir
+[submodule "vim-fireplace"]
+  url = git@github.com:tpope/vim-fireplace.git
+  path = nvim/bundle/vim-fireplace
+[submodule "vim-fugitive"]
+  url = git@github.com:tpope/vim-fugitive.git
+  path = nvim/bundle/vim-fugitive
+[submodule "vim-gitgutter"]
+  url = git@github.com:airblade/vim-gitgutter.git
+  path = nvim/bundle/vim-gitgutter
+[submodule "vim-go"]
+  url = git@github.com:fatih/vim-go.git
+  path = nvim/bundle/vim-go
+[submodule "vim-javascript"]
+  url = git@github.com:pangloss/vim-javascript.git
+  path = nvim/bundle/vim-javascript
+[submodule "vim-jsx"]
+  url = git@github.com:mxw/vim-jsx.git
+  path = nvim/bundle/vim-jsx
+
