@@ -117,7 +117,7 @@ export PATH=$PATH:`go env GOPATH`/bin
 export GOPATH=`go env GOPATH`
 export PATH=$PATH:`yarn global bin`
 
-. /usr/share/autojump/autojump.sh
+[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
