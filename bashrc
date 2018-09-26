@@ -124,6 +124,11 @@ export PATH=$PATH:`yarn global bin`
 
 export EDITOR=vim
 
+export JAVA_HOME=/usr/lib/jvm/default-java
+
+# make capslock the same as esc
+setxkbmap -option caps:escape
+
 if [ -f ~/.bash_extra ]; then
     . ~/.bash_extra
 fi
