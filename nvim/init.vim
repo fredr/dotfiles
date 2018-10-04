@@ -15,6 +15,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'mileszs/ack.vim'
 Plugin 'dylanaraps/crayon'
 Plugin 'mxw/vim-jsx'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
