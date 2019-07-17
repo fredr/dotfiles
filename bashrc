@@ -135,3 +135,4 @@ fi
 
 #SYBCTL_GCLOUD_ALIAS#
 source ~/.sybctl_gcloud_alias
+export PATH=$PATH:~/.jx/bin

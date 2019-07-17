@@ -4,6 +4,8 @@ filetype off
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin("~/.config/nvim/bundle")
 
+Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'tpope/vim-fireplace'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
@@ -16,6 +18,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'dylanaraps/crayon'
 Plugin 'mxw/vim-jsx'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'ensime/ensime-vim'
+Plugin 'Shougo/deoplete.nvim'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,6 +28,8 @@ syntax enable
 set termguicolors
 set background=dark
 colorscheme crayon
+
+let g:deoplete#enable_at_startup = 1
 
 set noerrorbells                " No beeps
 set number                      " Show line numbers

@@ -16,6 +16,9 @@ alias todo="jrnl @todo"
 
 alias gst="git status"
 
+# become a mac
 alias open="xdg-open"
 alias pbcopy="xclip -sel c"
 alias pbpaste="xclip -sel c -o"
+
+alias e="emacs25 -nw"
