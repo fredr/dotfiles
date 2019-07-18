@@ -21,4 +21,4 @@ alias open="xdg-open"
 alias pbcopy="xclip -sel c"
 alias pbpaste="xclip -sel c -o"
 
-alias e="emacs25 -nw"
+alias e="emacs -nw"
