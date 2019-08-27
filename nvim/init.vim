@@ -18,8 +18,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'dylanaraps/crayon'
 Plugin 'mxw/vim-jsx'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'ensime/ensime-vim'
-Plugin 'Shougo/deoplete.nvim'
+" Plugin 'ensime/ensime-vim'
+" Plugin 'Shougo/deoplete.nvim'
 
 call vundle#end()
 filetype plugin indent on
