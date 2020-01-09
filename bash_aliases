@@ -25,6 +25,8 @@ alias pbpaste="xclip -sel c -o"
 
 alias e="emacs -nw"
 
+alias joke="curl -H \"Accept: text/plain\" https://icanhazdadjoke.com/ -w \"\n\""
+
 function c() {
     kubectl config use-context $1
 }
