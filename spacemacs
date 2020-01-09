@@ -69,6 +69,7 @@ values."
      ;; spell-checking
      syntax-checking
      version-control
+     neotree
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -279,7 +280,7 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers t
+   dotspacemacs-line-numbers nil
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
@@ -331,7 +332,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
   When nil, indent to the column after the `(' of the
   function.")
 
-  (add-hook 'erlang-mode-hook '(lambda() (setq indent-tabs-mode t)))
+  (add-hook 'erlang-mode-hook '(lambda() (setq indent-tabs-mode nil)))
   (add-hook 'elixir-mode-hook
             (lambda () (add-hook 'before-save-hook 'elixir-format nil t)))
 
@@ -363,8 +364,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
       (insert (shell-command-to-string "xclip -sel c -o"))
       )
     )
-  (evil-leader/set-key "x y" 'copy-to-clipboard)
-  (evil-leader/set-key "x p" 'paste-from-clipboard)
+  (evil-leader/set-key "o y" 'copy-to-clipboard)
+  (evil-leader/set-key "o p" 'paste-from-clipboard)
 )
 
 (defun dotspacemacs/user-config ()
@@ -420,3 +421,25 @@ you should place your code here."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(evil-want-Y-yank-to-eol nil)
+ '(linum-format " %6d ")
+ '(package-selected-packages
+   (quote
+    (git-gutter-fringe flyspell-correct-helm flyspell-correct auto-dictionary git-gutter-fringe+ fringe-helper git-gutter+ git-gutter diff-hl hcl-mode nginx-mode dockerfile-mode docker tablist docker-tramp clojure-snippets clj-refactor inflections edn paredit peg cider-eval-sexp-fu cider sesman queue clojure-mode csv-mode d-mode company-dcd ivy flycheck-dmd-dub erlang tide typescript-mode ac-alchemist smeargle orgit magit-gitflow helm-gitignore gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit magit-popup git-commit ghub treepy graphql with-editor company-emacs-eclim eclim powershell vimrc-mode dactyl-mode yaml-mode sql-indent noflet ensime sbt-mode scala-mode xclip editorconfig yapfify web-mode web-beautify tagedit slim-mode scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake pyvenv pytest pyenv-mode py-isort pug-mode pip-requirements phpunit phpcbf php-extras php-auto-yasnippets ob-elixir mmm-mode minitest markdown-toc markdown-mode livid-mode skewer-mode simple-httpd live-py-mode less-css-mode json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc hy-mode helm-pydoc helm-css-scss haml-mode go-guru go-eldoc gh-md flycheck-pos-tip pos-tip flycheck-mix flycheck-credo flycheck emmet-mode drupal-mode php-mode cython-mode company-web web-completion-data company-tern dash-functional tern company-go go-mode company-anaconda coffee-mode chruby bundler inf-ruby anaconda-mode pythonic alchemist elixir-mode unfill mwim helm-company helm-c-yasnippet fuzzy company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete helm-projectile helm-make projectile pkg-info epl ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-mode-manager helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump diminish define-word column-enforce-mode clean-aindent-mode bracketed-paste auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+)
