@@ -31,6 +31,9 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+    (lsp :variables
+          lsp-ui-doc-winum-ignore t
+          lsp-ui-doc--buffer-prefix " *lsp-ui-doc-")
      nginx
      terraform
      clojure
@@ -38,15 +41,9 @@ values."
      docker
      erlang
      typescript
-     windows-scripts
      vimscript
      yaml
      sql
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
      helm
      auto-completion
      better-defaults
@@ -59,14 +56,12 @@ values."
          gofmt-command "goimports"
          go-tab-width 4)
      javascript
-     php
      python
-     react
      ruby
      html
-     (scala :variables scala-backend 'scala-metals)
+     (scala :variables
+            scala-backend 'scala-metals)
      java
-     ;; spell-checking
      syntax-checking
      version-control
      neotree
@@ -131,7 +126,7 @@ values."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
-   dotspacemacs-startup-banner 'official
+   dotspacemacs-startup-banner '000
    ;; List of items to show in startup buffer or an association list of
    ;; the form `(list-type . list-size)`. If nil then it is disabled.
    ;; Possible values for list-type are:
