@@ -108,7 +108,8 @@ fi
 source ~/.sybctl_gcloud_alias
 export PATH=$PATH:~/.jx/bin
 
-export PATH=$PATH:`yarn global bin`
+# export PATH=$PATH:`yarn global bin`
 
 # Enable erlang shell history
 export ERL_AFLAGS="-kernel shell_history enabled"
+. "$HOME/.cargo/env"
