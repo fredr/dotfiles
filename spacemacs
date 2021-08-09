@@ -35,7 +35,7 @@ values."
           lsp-ui-doc-winum-ignore t
           lsp-ui-doc--buffer-prefix " *lsp-ui-doc-")
      nginx
-     terraform
+     (terraform :variables terraform-auto-format-on-save t)
      clojure
      csv
      docker
