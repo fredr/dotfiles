@@ -11,12 +11,7 @@ function kceachctx() {
     for ctx in $(kubectl config get-contexts -o name)
     do
         echo "Context \"$ctx\":"
-        output=$(kubectl --context $ctx "$@")
-        if [ -z "$output" ]; then
-            echo "<empty>"
-        else
-            echo "$output"
-        fi
+        kubectl --context $ctx "$@"
         echo ""
     done
 }
