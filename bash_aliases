@@ -10,10 +10,14 @@ alias kc="kubectl"
 function kceachctx() {
     for ctx in $(kubectl config get-contexts -o name)
     do
-        echo "Context \"$ctx\":"
-        kubectl --context $ctx "$@"
-        echo ""
+    {
+        (
+           local res=$(kubectl --context $ctx "$@")
+           printf "Context \"%s\":\n%s\n\n" "$ctx" "$res"
+        ) &
+    } 2>/dev/null
     done
+    wait 2>/dev/null
 }
 
 alias gg="git grep -n --untracked -I"
