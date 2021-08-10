@@ -2,9 +2,7 @@
 
 alias testssl="docker run -it drwetter/testssl.sh"
 
-alias ll="ls -l"
 alias la="ls -al"
-alias l="ls -CF"
 
 alias kc="kubectl"
 function kceachctx() {
@@ -24,9 +22,6 @@ alias gg="git grep -n --untracked -I"
 rgrep() {
   grep -r -n "$1" .
 }
-
-alias work="jrnl @work"
-alias todo="jrnl @todo"
 
 alias gst="git status"
 
