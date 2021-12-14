@@ -1,0 +1,68 @@
+{
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        }
+    ],
+    "go.formatTool": "goimports",
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "terraform.languageServer": {
+        "external": true,
+        "pathToBinary": "",
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "go.toolsManagement.autoUpdate": true,
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.guides.bracketPairs": true,
+    "editor.formatOnSave": true,
+    "[json]": {
+        "editor.formatOnSave": false,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "[html]": {
+        "editor.formatOnSave": false,
+        "editor.suggest.insertMode": "replace"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "arduino.additionalUrls": "https://arduino.esp8266.com/stable/package_esp8266com_index.json",
+    "rust-analyzer.inlayHints.enable": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "files.associations": {
+        "Dockerfile": "dockerfile"
+    }
+}
